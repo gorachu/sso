@@ -10,6 +10,7 @@ import (
 	"github.com/gorachu/sso/internal/domain/models"
 	"github.com/gorachu/sso/internal/lib/jwt"
 	"github.com/gorachu/sso/internal/lib/logger/sl"
+	"github.com/gorachu/sso/internal/storage"
 
 	"golang.org/x/crypto/bcrypt"
 )

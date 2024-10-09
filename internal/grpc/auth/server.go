@@ -9,6 +9,8 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/gorachu/sso/internal/services/auth"
+	"github.com/gorachu/sso/internal/storage"
+
 	// Сгенерированный код
 	ssov1 "github.com/gorachu/protos/gen/go/sso"
 )

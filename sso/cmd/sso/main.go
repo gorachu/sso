@@ -15,14 +15,13 @@ const (
 )
 
 func main() {
-	// TODO: инициализировать объект конфига
 	cfg := config.MustLoad()
+
 	log := setupLogger(cfg.Env)
-	// TODO: инициализировать логгер
 
-	// TODO: инициализировать приложение (app)
+	application := app.New(log, cfg.GRPC.Port, cfg.StoragePath, cfg.TokenTTL)
 
-	// TODO: запустить gRPC-сервер приложения
+	application.GRPCServer.MustRun()
 }
 func setupLogger(env string) *slog.Logger {
 	var log *slog.Logger
