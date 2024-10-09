@@ -3,12 +3,19 @@ module github.com/gorachu/sso
 go 1.23.1
 
 require (
+	github.com/brianvoe/gofakeit v3.18.0+incompatible
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/golang-migrate/migrate/v4 v4.18.1
 	github.com/gorachu/protos v0.0.0-20241001101302-709965769fbc
 	github.com/ilyakaznacheev/cleanenv v1.5.0
+	github.com/stretchr/testify v1.9.0
 	golang.org/x/crypto v0.28.0
 	google.golang.org/grpc v1.67.1
+)
+
+require (
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
 )
 
 require (
