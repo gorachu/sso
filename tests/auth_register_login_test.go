@@ -15,18 +15,16 @@ import (
 const (
 	emptyAppID = 0
 	appID      = 1
-	appSecret  = "test-secret"
+	appSecret  = "dici-password"
 
 	passDefaultLen = 10
 )
 
-// TODO: add token fail validation cases
-
 func TestRegisterLogin_Login_HappyPath(t *testing.T) {
 	ctx, st := suite.New(t)
 
-	email := gofakeit.Email()
-	pass := randomFakePassword()
+	email := "simple1@www.com" //gofakeit.Email()
+	pass := "11111111"         //randomFakePassword()
 
 	respReg, err := st.AuthClient.Register(ctx, &ssov1.RegisterRequest{
 		Email:    email,
