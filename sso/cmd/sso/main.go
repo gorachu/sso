@@ -5,6 +5,7 @@ import (
 	"log/slog"
 	"os"
 
+	"github.com/gorachu/sso/internal/app"
 	"github.com/gorachu/sso/internal/config"
 )
 
